@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FavoritosFragment"
+  >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/redLayout1">
+                <include layout="@layout/toolbar_busca"/>
+                <include layout="@layout/toolbar"/>
+            </RelativeLayout>
+
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 android:layout_below="@id/redLayout1">
+
+
+                 <ListView
+                     android:id="@+id/cafe_list"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+                 
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:textSize="25sp"
+                     android:id="@+id/textCafes"/>
+
+             </RelativeLayout>
+
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/fabAddCafe"
+        android:src="@drawable/maiscafe"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom|end">
+
+    </android.support.design.widget.FloatingActionButton>
+
+</android.support.design.widget.CoordinatorLayout>

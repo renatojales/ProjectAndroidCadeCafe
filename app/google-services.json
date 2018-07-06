@@ -1,0 +1,60 @@
+{
+  "project_info": {
+    "project_number": "369981734796",
+    "firebase_url": "https://cadecafe-6af0c.firebaseio.com",
+    "project_id": "cadecafe-6af0c",
+    "storage_bucket": "cadecafe-6af0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369981734796:android:77e8500ed581c1b4",
+        "android_client_info": {
+          "package_name": "com.example.juliane.cadecafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369981734796-hp17357uur370n057l3fnuvt8no3bg68.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.juliane.cadecafe",
+            "certificate_hash": "5fc91ba6ae3307feb89b52f6d574db18a4e8091c"
+          }
+        },
+        {
+          "client_id": "369981734796-edslj1mnrt88q82c1vir5d8en2q1537s.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "369981734796-edslj1mnrt88q82c1vir5d8en2q1537s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVCRW4WL4H00U4jxKKJKzgykG-nU1JUgA"
+          // "AIzaSyDmvpSaI1suk7xIRY0evWbT35HhJX8dhe0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369981734796-edslj1mnrt88q82c1vir5d8en2q1537s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/redLayout1">
+
+        <include layout="@layout/snippet_editcafetoolbar"></include>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/redLayout1"
+            android:id="@+id/redLayout2"
+            android:padding="25dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/cafeImage"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/cafeImage"
+                android:src="@drawable/ic_camera"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/camera"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redLayout2"
+            android:id="@+id/redLayout3"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:id="@+id/ivCafe"
+                android:src="@drawable/ic_cafe"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/etCafeNome"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/ivCafe"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/redLayout4"
+            android:padding="10dp"
+            android:layout_below="@+id/redLayout3"
+            android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:id="@+id/ivTelefone"
+            android:src="@drawable/ic_telefone_grey"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/etTelefone"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:inputType="textNoSuggestions"
+            android:layout_toRightOf="@+id/ivTelefone"/>
+
+        <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/selectDevice"
+            android:layout_below="@+id/ivTelefone"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:entries="@array/device_options"
+            android:layout_alignStart="@+id/etTelefone"
+            android:layout_alignLeft="@+id/etTelefone"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/relLayout5"
+        android:padding="10dp"
+        android:layout_below="@+id/redLayout4">
+
+        <ImageView
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:id="@+id/ivEndereco"
+            android:src="@drawable/ic_rua_grey"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/etCafeEndereco"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:inputType="textNoSuggestions"
+            android:layout_toRightOf="@+id/ivEndereco"/>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

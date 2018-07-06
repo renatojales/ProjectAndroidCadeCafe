@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/redLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/snippet_cafetoolbar"/>
+
+        </RelativeLayout>
+
+
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/redLayout3"
+            android:id="@+id/redLayout2">
+
+
+             <de.hdodenhof.circleimageview.CircleImageView
+                 android:id="@+id/cafeImage"
+                 android:layout_width="200dp"
+                 android:layout_height="200dp"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="55dp"/>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/cafeImage"
+                 android:id="@+id/redLayout3">
+
+                 <Button
+                     android:id="@+id/btnCafeProximo"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentStart="true"
+                     style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+                     android:layout_alignParentTop="true"
+                     android:text="Cafés Próximos a Você">
+
+                 </Button>
+
+             </RelativeLayout>
+
+
+             <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:id="@+id/cafeNome"
+                 android:layout_below="@+id/redLayout3"
+                 android:layout_marginTop="30dp"
+                 android:layout_marginStart="30dp"
+                 android:layout_marginLeft="30dp"
+                 android:textColor="@color/colorPrimaryDark"
+                 android:textSize="30sp"/>
+
+             <Spinner
+                 android:id="@+id/selectDevice"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginStart="20dp"
+                 android:layout_marginTop="50dp"
+                 android:entries="@array/device_options"
+                 android:textColor="@color/colorPrimaryDark"
+                 android:textSize="16sp"
+                 android:layout_below="@+id/cafeNome"/>
+
+             <ListView
+                 android:id="@+id/lvCafeProperties"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_below="@+id/selectDevice" />
+
+
+         </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

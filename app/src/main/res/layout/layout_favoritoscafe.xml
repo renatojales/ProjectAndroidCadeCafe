@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cafeImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="0.5dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/cafeNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom="@+id/cafeImage"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/cafeImage"/>
+
+    <ProgressBar
+        android:id="@+id/cafeProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>
+
